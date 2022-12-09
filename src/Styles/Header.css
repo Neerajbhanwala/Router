@@ -1,0 +1,37 @@
+.main-header{
+    height:50px;
+    width:100%;
+    background:transparent;
+    box-shadow:2px 2px 5px #000000;
+}
+ul{
+    height:100%;
+    float:right;
+    width:44%;
+    margin-top:0px;
+    align-items:center;
+    display:flex;
+}
+li{
+    float:right;
+    font-size:18px;
+    color:rgb(202, 198, 198);
+    list-style-type:none;
+    margin-left:10px;
+    padding:0px 10px;
+    cursor:pointer;
+
+}
+li.hd:after{
+    display:block;
+    content: '';
+    border-bottom: solid 3px #fff;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+li:hover:after{
+    transform: scaleX(1.6);
+}
+li:hover{
+    color:#fff;
+}
